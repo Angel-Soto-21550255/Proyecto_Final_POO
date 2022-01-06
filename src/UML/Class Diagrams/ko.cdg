@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ko">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="20.0" yPosition="51.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="TipoID" type="int" visibility="private"/>
+        <Field name="Nombre" type="String" visibility="private"/>
+        <Field name="Apellido" type="String" visibility="private"/>
+        <Field name="Nacimiento" type="Date" visibility="private"/>
+        <Field name="Genero" type="char" visibility="private"/>
+        <Field name="TipoSangre" type="String" visibility="private"/>
+        <Field name="Peso" type="double" visibility="private"/>
+        <Field name="Estatura" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="ID"/>
+          <Argument type="int" name="TipoID"/>
+          <Argument type="String" name="Nombre"/>
+          <Argument type="String" name="Apellido"/>
+          <Argument type="Date" name="Nacimiento"/>
+          <Argument type="char" name="Genero"/>
+          <Argument type="String" name="TipoSangre"/>
+          <Argument type="double" name="Peso"/>
+          <Argument type="double" name="Estatura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getTipoID" returnType="int" visibility="public"/>
+        <Method name="setTipoID" returnType="void" visibility="public">
+          <Argument type="int" name="TipoID"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="Nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="Apellido"/>
+        </Method>
+        <Method name="getNacimiento" returnType="Date" visibility="public"/>
+        <Method name="setNacimiento" returnType="void" visibility="public">
+          <Argument type="Date" name="Nacimiento"/>
+        </Method>
+        <Method name="getGenero" returnType="char" visibility="public"/>
+        <Method name="setGenero" returnType="void" visibility="public">
+          <Argument type="char" name="Genero"/>
+        </Method>
+        <Method name="getTipoSangre" returnType="String" visibility="public"/>
+        <Method name="setTipoSangre" returnType="void" visibility="public">
+          <Argument type="String" name="TipoSangre"/>
+        </Method>
+        <Method name="getPeso" returnType="double" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public">
+          <Argument type="double" name="Peso"/>
+        </Method>
+        <Method name="getEstatura" returnType="double" visibility="public"/>
+        <Method name="setEstatura" returnType="void" visibility="public">
+          <Argument type="double" name="Estatura"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Empleado" package="" visibility="public" xPosition="902.0" yPosition="90.0">
+      <Fields>
+        <Field name="NumeroCarnet" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getNumeroCarnet" returnType="int" visibility="public"/>
+        <Method name="setNumeroCarnet" returnType="void" visibility="public">
+          <Argument type="int" name="NumeroCarnet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="" visibility="public" xPosition="943.0" yPosition="309.0">
+      <Fields>
+        <Field name="NumeroCli" type="int" visibility="private"/>
+        <Field name="Direccion" type="String" visibility="private"/>
+        <Field name="Edad" type="String" visibility="private"/>
+        <Field name="Telefono" type="int" visibility="private"/>
+        <Field name="Correo" type="String" visibility="private"/>
+        <Field name="FechaCon" type="Data" visibility="private"/>
+        <Field name="Razon" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getNumeroCli" returnType="int" visibility="public"/>
+        <Method name="setNumeroCli" returnType="void" visibility="public">
+          <Argument type="int" name="NumeroCli"/>
+        </Method>
+        <Method name="getDireccion" returnType="String" visibility="public"/>
+        <Method name="setDireccion" returnType="void" visibility="public">
+          <Argument type="String" name="Direccion"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Empleado" target="Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
